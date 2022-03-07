@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+
+    <div class="fullApp">
+    <div class="container">
+
+    <form class="searchForm" id="searched-city-form">
+  <div class="row">
+<span class="col-6">
+	<input
+	type="search"  
+	placeholder="Enter City"
+	id="search-input"
+  autocomplete="off" 
+  class="searchInput"
+  />
+</span>
+<span class="col-3">
+	<input 
+	type="submit" 
+  value="search"
+  class="inputButton"
+  />
+</span>
+
+<span class="col-3">
+<button 
+id="geolocation-button"
+class="geolocationButton"
+>
+Current Location
+</button> 
+</span>
+  </div>
+    </form>
+
+    <br>
+			<h1 id="city-name"></h1>
+  <h2 id="current-time"></h2>
+  <ul style="list-style: none;">
+	<li id="weather-description">
+			<em></em>
+	</li>
+</ul>
+<div class="row">
+  <div class="col-6">
+    <div class="fixed">
+      <div class="floatingLeft"
+        <span class="presentTemp" id="present-temp">°F</span>
+    </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <ul>
+      <li> Humidity: <span id="humidity"></span>% </li>
+      <li> Wind: <span id="wind"></span> km/h </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+    </div>
+  </div>, initial-scale=1.0">
+  <script src="script.js"></script>
+</body>
+</html>

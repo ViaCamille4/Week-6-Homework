@@ -1,0 +1,92 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul {
+      list-style-type: none;
+}
+      
+li {
+        color: black
+        font-size: 25px;
+        font-weight: 100;
+        height: 19px;
+        line-height: 1;
+        list-style: none;
+       
+    
+}
+.searchInput {
+    padding: 6px 20px;
+    display: inline;
+    height: 35px;
+    margin-left: 10px;
+}
+.inputButton {
+    padding: 6px 12px;
+    display: inline;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.geolocationButton {
+    padding: 6px 12px;
+    display: inline;
+    height: 30px;
+    text-align: center;
+    margin: 10px 5px;
+}
+    .container {
+        background-color: rgb(209, 235, 250);
+        color: rgb(15, 0, 102);
+        align-content: center;
+        border: 1px solid #dadde1;
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 10px;
+        max-width: 600px;
+}
+    .fullApp {
+        border-radius: 10px;
+        border: 5px solid royalblue;
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 600px;
+
+    }
+    .floatingLeft {
+        float: left;
+        width: 200px;
+        height: 100px;
+        display: inline;
+        list-style-type: none;
+        padding: 0px;
+    }
+    .floatingRight {
+        float: right;
+        width: 600px;
+        display: inline;
+        text-align: left;
+        padding: 0px;
+    }
+    .presentTemp {
+        font-size: 60px;
+    }
+    .days {
+        color: black;
+        border: 3px solid #382161;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px 10px;
+        padding-top: 10px 10px;
+        font-size: 15px;
+    }
+    .containerImages {
+        text-align: center;
+        font-size: 15px;
+    }
+   .weekday {
+    padding: 6px 12px;
+    display: inline;
+    text-align: center;
+    margin: 5px auto;   
+   }
