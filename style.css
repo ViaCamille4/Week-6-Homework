@@ -22,21 +22,24 @@ li:first-letter {
     padding: 6px 20px;
     display: inline;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 10px; 
 }
 .inputButton {
     padding: 6px 12px;
     display: inline;
     height: 30px;
     text-align: center;
-    margin-left: 10px;
+    margin: 3px 5px;
+    font-size: small;
 }
 .geolocationButton {
-    padding: 6px 12px;
+    padding: 6px 6px;
     display: inline;
     height: 30px;
+    width: 120px;
     text-align: center;
-    margin: 10px 5px;
+    margin: 3px 5px;
+    font-size: small;
 }
     .container {
         background-color: rgb(209, 235, 250);
@@ -96,7 +99,7 @@ li:first-letter {
 
    .location-temperature .active {
     color: black;
-    cursor: default;
+    cursor: pointer;
     }
 
     .location-temperature .active:hover {
