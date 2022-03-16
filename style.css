@@ -12,9 +12,12 @@ li {
         height: 19px;
         line-height: 1;
         list-style: none;
-       
-    
 }
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .searchInput {
     padding: 6px 20px;
     display: inline;
@@ -90,3 +93,16 @@ li {
     text-align: center;
     margin: 5px auto;   
    }
+
+   .location-temperature .active {
+    color: black;
+    cursor: default;
+    }
+
+    .location-temperature .active:hover {
+     text-decoration: none;
+    }
+
+    .weather-temperature .units {
+     position: relative;
+    }
