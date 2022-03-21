@@ -13,13 +13,13 @@
     <div class="fullApp">
     <div class="container">
 
-    <form class="searchForm" id="searched-city-form">
+    <form id="searched-form">
   <div class="row">
 <span class="col-6">
 	<input
 	type="search"  
 	placeholder="Enter City"
-	id="search-input"
+	id="city-input"
   autocomplete="off" 
   class="searchInput"
   />
@@ -35,7 +35,7 @@
 <span class="col-3">
 <button 
 id="geolocation-button"
-class="geolocationButton btn btn-lg btn-secondary"
+class="geolocationButton btn btn-light"
 >
 Current Location
 </button> 
@@ -44,7 +44,7 @@ Current Location
     </form>
 
     <br>
-			<h1 id="city-name"></h1>
+			<h1 id="city"></h1>
   <h2 id="current-time"></h2>
   <ul style="list-style: none;">
 	<li id="weather-description">
@@ -56,10 +56,10 @@ Current Location
     <div class="clearfix location-temperature">
       <img src="" id="icon" class="float-left"/>
       <div class="floatingLeft">
-        	<span class="presentTemp" id="present-temp"></span>
+        	<span class="presentTemp" id="temperature"></span>
 				<span class="units">
-            <a href="#" id="fahrenheit-link" class="active">°F</a>
-						<a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>
+						<a href="#" id="celsius-link" class="active celsius">°C</a> |
 					</span>
     </div>
     </div>

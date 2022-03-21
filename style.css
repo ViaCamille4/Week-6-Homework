@@ -109,3 +109,18 @@ li:first-letter {
     .weather-temperature .units {
      position: relative;
     }
+
+    .fahrenheit:hover {
+  color: red;
+  cursor: pointer;
+}
+.celsius:hover {
+  color: red;
+  cursor: pointer;
+}
+.fahrenheit {
+  font-size: 25px;
+}
+.celsius {
+  font-size: 25px;
+}
