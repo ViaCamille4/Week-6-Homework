@@ -18,6 +18,16 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+img {
+        float: left;
+        width: 30px;
+        height: 30px;
+        display: inline;
+        list-style-type: none;
+        padding: 0px;
+    }
+}
+
 .searchInput {
     padding: 6px 20px;
     display: inline;
@@ -59,14 +69,7 @@ li:first-letter {
         max-width: 600px;
 
     }
-    .floatingLeft {
-        float: left;
-        width: 200px;
-        height: 100px;
-        display: inline;
-        list-style-type: none;
-        padding: 0px;
-    }
+   
     .floatingRight {
         float: right;
         width: 600px;
