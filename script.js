@@ -105,7 +105,7 @@ function displayTemperature(response) {
 
   celsiusTemperature = response.data.main.temp;
 
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°`;
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = `${response.data.main.humidity}%`;;
@@ -136,7 +136,7 @@ function displayFahrenheitTemperature(event) {
   fahrenheitLink.classList.add("active");
 
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  temperatureElement.innerHTML = `${Math.round(fahrenheitTemperature)}°`;
 }
 
 let form = document.querySelector("form");
@@ -147,7 +147,7 @@ function displayCelsiusTemperature(event) {
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°`;
 }
 
 let celsiusTemperature = null;
