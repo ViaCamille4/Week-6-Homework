@@ -14,18 +14,18 @@ li {
         list-style: none;
 }
 
+h2 {
+font-size: 20px;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
 
-img {
-        float: left;
-        width: 30px;
-        height: 30px;
-        display: inline;
-        list-style-type: none;
-        padding: 0px;
-    }
+.location-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
 
 .searchInput {
@@ -52,7 +52,7 @@ img {
     font-size: small;
 }
     .container {
-        background-color: rgb(209, 235, 250);
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
         color: rgb(15, 0, 102);
         align-content: center;
         border: 1px solid #dadde1;
@@ -78,7 +78,7 @@ img {
         padding: 0px;
     }
     .presentTemp {
-        font-size: 60px;
+        font-size: 50px;
     }
     .days {
         color: black;
@@ -122,8 +122,27 @@ img {
   cursor: pointer;
 }
 .fahrenheit {
-  font-size: 25px;
+  font-size: 15px;
 }
 .celsius {
-  font-size: 25px;
+  font-size: 15px;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+    color: green;
+}
+
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+    opacity: 0.6;
 }
