@@ -1,32 +1,58 @@
-let now = new Date();
-let h2 = document.querySelector("h2");
-let days = [
+function formatDate(timestamp) {
+  const date = new Date(timestamp);
+  const hours = date.getHours();
+  if (hours < 10) {
+  hours = `0${hours}`;
+}
+const minutes = date.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+
+const days = [
   "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday",
+  "Saturday"
 ];
-let day = days[now.getDay()];
-let hours = now.getHours();
-if(hours < 10) {
-  hours = `0${hours}`;
-}
-let minutes = now.getMinutes();
-if(minutes < 10) {
-  minutes = `0${minutes}`;
-}
-h2.innerHTML = `${day} ${hours}:${minutes}`;
 
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+]
 
+const weekDay = days[date.getDay()];
+const currentMonth = months[date.getMonth()];
+const currentDay = date.getDate();
+return `${weekDay}, ${currentMonth} ${currentDay} - ${hours}:${minutes}`;
+}
+
+function formatDay(timestamp) {
+  const date = new Date(timestamp * 1000);
+  const day = date.getDay();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
 
 function displayForecast() {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tues", "Wed"];
 
    let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
